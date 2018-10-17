@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    app:logo="@mipmap/ic_launcher"
+    app:title="second activity"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</android.support.v7.widget.Toolbar>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/toolbar_back"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/toolbar_back"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/btn_gray_null"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/back" />
+
+<!--
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="53.3dp"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_gray_null"
+        android:paddingBottom="12.4dp"
+        android:paddingLeft="16.9dp"
+        android:paddingRight="16.9dp"
+        android:paddingTop="12.4dp"
+        android:src="@drawable/order_title_search"
+        android:visibility="gone" />
+-->
+
+    <TextView
+        android:id="@+id/print"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_gray_null"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="8.9dp"
+        android:paddingRight="8.9dp"
+        android:singleLine="true"
+        android:text="1123"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="53.3dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="说明"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
