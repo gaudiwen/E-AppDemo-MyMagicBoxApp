@@ -1,0 +1,2 @@
+# E-AppDemo-MyMagicBoxApp
+DuoFriendApp
