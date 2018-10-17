@@ -32,28 +32,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         ButterKnife.bind(this);
 
-
-//        imgToolBarBack = (ImageView) findViewById(R.id.toolbar_back);
-//        imgToolBarBack.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                finish();
-//                LogUtil.v("toolbar返回！");
-//            }
-//        });
-
-/*        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        if(toolbar != null){
-
-            setSupportActionBar(toolbar);
-            mToolBarHelper = new ToolBarHelper(toolbar);
-            handleToolBar(mToolBarHelper);
-        }*/
-
-        initView();
-        initData();
-        initListener();
-
     }
 
 

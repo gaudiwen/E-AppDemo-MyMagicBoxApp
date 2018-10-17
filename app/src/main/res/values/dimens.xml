@@ -30,4 +30,7 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.6</item>
     </style>
+
+    <dimen name="dp_1">0.9dp</dimen>
+    <dimen name="dp_2">1.8dp</dimen>
 </resources>
